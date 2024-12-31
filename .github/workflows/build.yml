@@ -52,6 +52,6 @@ jobs:
           cache-from: type=registry,ref=ghcr.io/owl-corp/python-poetry-base:${{ matrix.python_version }}
           cache-to: type=inline
           tags: |
-            ghcr.io/owl-corp/python-poetry-base:${{ matrix.python_version }}
+            ghcr.io/verylongdelay/python-uv-base:${{ matrix.python_version }}
           build-args: |
             python_version=${{ matrix.python_version }}
